@@ -1,0 +1,50 @@
+body{
+    
+    background-image: linear-gradient(to left, #e796a4, #ff0000,#ffff00);
+ }
+
+ h1 {
+    padding-left : 50px;
+    padding-right : 50px;
+    padding-top : 50px;
+    padding-bottom : 50px;
+ }
+ .header{
+    background-image: linear-gradient(to right,rgba(233,137,241,0), rgb(233, 137, 241,1));
+    display : flex;
+    justify-content: space-between;
+ }
+
+ .header * {
+   border : solid;
+   border-color: #237a47;
+ }
+ .grid{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+ }
+
+ p{
+    text-align: center; 
+ }
+
+ .item {
+    position : relative
+ }
+
+ .item p {
+    position: absolute;
+    top : 50%;
+    left : 50%;
+   transform : translate(-50%,-50%);
+   opacity : 0; 
+ }
+
+ .item:hover p{
+    opacity: 1;
+ }
+
+ .item:hover img{
+    opacity : 0;
+ }
